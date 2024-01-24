@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B47E0DBCB04A93724B6F6FF /* Pods_ewallet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77953138FEA533513510EB5E /* Pods_ewallet_iosTests.framework */; };
+		66B7298A7348F4C0AC6DBA50 /* Pods_ewallet_ios_ewallet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234F9B93EAB167CB1C88CFAD /* Pods_ewallet_ios_ewallet_iosUITests.framework */; };
+		C1BF4B9D983AB5524B712B27 /* Pods_ewallet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDE080672DDE5247E76A4E2 /* Pods_ewallet_ios.framework */; };
+		F231053D2B615AFD00658817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231053C2B615AFD00658817 /* AppDelegate.swift */; };
+		F231053F2B615AFD00658817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231053E2B615AFD00658817 /* SceneDelegate.swift */; };
+		F23105412B615AFD00658817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105402B615AFD00658817 /* ViewController.swift */; };
+		F23105442B615AFD00658817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23105422B615AFD00658817 /* Main.storyboard */; };
+		F23105462B615AFF00658817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23105452B615AFF00658817 /* Assets.xcassets */; };
+		F23105492B615AFF00658817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23105472B615AFF00658817 /* LaunchScreen.storyboard */; };
+		F23105542B615AFF00658817 /* ewallet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105532B615AFF00658817 /* ewallet_iosTests.swift */; };
+		F231055E2B615AFF00658817 /* ewallet_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231055D2B615AFF00658817 /* ewallet_iosUITests.swift */; };
+		F23105602B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F23105502B615AFF00658817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23105312B615AFD00658817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23105382B615AFD00658817;
+			remoteInfo = "ewallet-ios";
+		};
+		F231055A2B615AFF00658817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F23105312B615AFD00658817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23105382B615AFD00658817;
+			remoteInfo = "ewallet-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		234F9B93EAB167CB1C88CFAD /* Pods_ewallet_ios_ewallet_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ewallet_ios_ewallet_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C766BC186738F6E14E28D5 /* Pods-ewallet-ios-ewallet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios-ewallet-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-ewallet-ios-ewallet-iosUITests/Pods-ewallet-ios-ewallet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E273564EDB4BEFF0225782C /* Pods-ewallet-ios-ewallet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios-ewallet-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-ewallet-ios-ewallet-iosUITests/Pods-ewallet-ios-ewallet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70ECA1E898E76EC047FA0DA6 /* Pods-ewallet-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-iosTests.release.xcconfig"; path = "Target Support Files/Pods-ewallet-iosTests/Pods-ewallet-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		73233453EB88A3EBFF012578 /* Pods-ewallet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios.release.xcconfig"; path = "Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios.release.xcconfig"; sourceTree = "<group>"; };
+		776B89D6A4A3BCD080B60A89 /* Pods-ewallet-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-ewallet-iosTests/Pods-ewallet-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77953138FEA533513510EB5E /* Pods_ewallet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ewallet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDE080672DDE5247E76A4E2 /* Pods_ewallet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ewallet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23105392B615AFD00658817 /* ewallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ewallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F231053C2B615AFD00658817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F231053E2B615AFD00658817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F23105402B615AFD00658817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F23105432B615AFD00658817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F23105452B615AFF00658817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23105482B615AFF00658817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F231054A2B615AFF00658817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F231054F2B615AFF00658817 /* ewallet-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ewallet-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23105532B615AFF00658817 /* ewallet_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ewallet_iosTests.swift; sourceTree = "<group>"; };
+		F23105592B615AFF00658817 /* ewallet-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ewallet-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F231055D2B615AFF00658817 /* ewallet_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ewallet_iosUITests.swift; sourceTree = "<group>"; };
+		F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ewallet_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F931AAA12F70DB4636806D3D /* Pods-ewallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios.debug.xcconfig"; path = "Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23105362B615AFD00658817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BF4B9D983AB5524B712B27 /* Pods_ewallet_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F231054C2B615AFF00658817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B47E0DBCB04A93724B6F6FF /* Pods_ewallet_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23105562B615AFF00658817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B7298A7348F4C0AC6DBA50 /* Pods_ewallet_ios_ewallet_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54116E554AD3121C62A82175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CDE080672DDE5247E76A4E2 /* Pods_ewallet_ios.framework */,
+				234F9B93EAB167CB1C88CFAD /* Pods_ewallet_ios_ewallet_iosUITests.framework */,
+				77953138FEA533513510EB5E /* Pods_ewallet_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AFA5CD0809399C02C9F3502 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F931AAA12F70DB4636806D3D /* Pods-ewallet-ios.debug.xcconfig */,
+				73233453EB88A3EBFF012578 /* Pods-ewallet-ios.release.xcconfig */,
+				6E273564EDB4BEFF0225782C /* Pods-ewallet-ios-ewallet-iosUITests.debug.xcconfig */,
+				66C766BC186738F6E14E28D5 /* Pods-ewallet-ios-ewallet-iosUITests.release.xcconfig */,
+				776B89D6A4A3BCD080B60A89 /* Pods-ewallet-iosTests.debug.xcconfig */,
+				70ECA1E898E76EC047FA0DA6 /* Pods-ewallet-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F23105302B615AFD00658817 = {
+			isa = PBXGroup;
+			children = (
+				F231053B2B615AFD00658817 /* ewallet-ios */,
+				F23105522B615AFF00658817 /* ewallet-iosTests */,
+				F231055C2B615AFF00658817 /* ewallet-iosUITests */,
+				F231053A2B615AFD00658817 /* Products */,
+				6AFA5CD0809399C02C9F3502 /* Pods */,
+				54116E554AD3121C62A82175 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F231053A2B615AFD00658817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23105392B615AFD00658817 /* ewallet-ios.app */,
+				F231054F2B615AFF00658817 /* ewallet-iosTests.xctest */,
+				F23105592B615AFF00658817 /* ewallet-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F231053B2B615AFD00658817 /* ewallet-ios */ = {
+			isa = PBXGroup;
+			children = (
+				F231053C2B615AFD00658817 /* AppDelegate.swift */,
+				F231053E2B615AFD00658817 /* SceneDelegate.swift */,
+				F23105402B615AFD00658817 /* ViewController.swift */,
+				F23105422B615AFD00658817 /* Main.storyboard */,
+				F23105452B615AFF00658817 /* Assets.xcassets */,
+				F23105472B615AFF00658817 /* LaunchScreen.storyboard */,
+				F231054A2B615AFF00658817 /* Info.plist */,
+			);
+			path = "ewallet-ios";
+			sourceTree = "<group>";
+		};
+		F23105522B615AFF00658817 /* ewallet-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F23105532B615AFF00658817 /* ewallet_iosTests.swift */,
+			);
+			path = "ewallet-iosTests";
+			sourceTree = "<group>";
+		};
+		F231055C2B615AFF00658817 /* ewallet-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F231055D2B615AFF00658817 /* ewallet_iosUITests.swift */,
+				F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */,
+			);
+			path = "ewallet-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23105382B615AFD00658817 /* ewallet-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23105632B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-ios" */;
+			buildPhases = (
+				4DCA25959A9BB71898B7D1E2 /* [CP] Check Pods Manifest.lock */,
+				F23105352B615AFD00658817 /* Sources */,
+				F23105362B615AFD00658817 /* Frameworks */,
+				F23105372B615AFD00658817 /* Resources */,
+				803F5DD73C07688429402B40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ewallet-ios";
+			productName = "ewallet-ios";
+			productReference = F23105392B615AFD00658817 /* ewallet-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F231054E2B615AFF00658817 /* ewallet-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23105662B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-iosTests" */;
+			buildPhases = (
+				CC3CA9A774356C4DE1B824D7 /* [CP] Check Pods Manifest.lock */,
+				F231054B2B615AFF00658817 /* Sources */,
+				F231054C2B615AFF00658817 /* Frameworks */,
+				F231054D2B615AFF00658817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F23105512B615AFF00658817 /* PBXTargetDependency */,
+			);
+			name = "ewallet-iosTests";
+			productName = "ewallet-iosTests";
+			productReference = F231054F2B615AFF00658817 /* ewallet-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F23105582B615AFF00658817 /* ewallet-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23105692B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-iosUITests" */;
+			buildPhases = (
+				3B47095C7DD4FF1D7F013A06 /* [CP] Check Pods Manifest.lock */,
+				F23105552B615AFF00658817 /* Sources */,
+				F23105562B615AFF00658817 /* Frameworks */,
+				F23105572B615AFF00658817 /* Resources */,
+				4729BB7EF3C4FE3DBFBB59EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F231055B2B615AFF00658817 /* PBXTargetDependency */,
+			);
+			name = "ewallet-iosUITests";
+			productName = "ewallet-iosUITests";
+			productReference = F23105592B615AFF00658817 /* ewallet-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23105312B615AFD00658817 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F23105382B615AFD00658817 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F231054E2B615AFF00658817 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F23105382B615AFD00658817;
+					};
+					F23105582B615AFF00658817 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F23105382B615AFD00658817;
+					};
+				};
+			};
+			buildConfigurationList = F23105342B615AFD00658817 /* Build configuration list for PBXProject "ewallet-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F23105302B615AFD00658817;
+			productRefGroup = F231053A2B615AFD00658817 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23105382B615AFD00658817 /* ewallet-ios */,
+				F231054E2B615AFF00658817 /* ewallet-iosTests */,
+				F23105582B615AFF00658817 /* ewallet-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23105372B615AFD00658817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23105492B615AFF00658817 /* LaunchScreen.storyboard in Resources */,
+				F23105462B615AFF00658817 /* Assets.xcassets in Resources */,
+				F23105442B615AFD00658817 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F231054D2B615AFF00658817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23105572B615AFF00658817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B47095C7DD4FF1D7F013A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ewallet-ios-ewallet-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4729BB7EF3C4FE3DBFBB59EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios-ewallet-iosUITests/Pods-ewallet-ios-ewallet-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios-ewallet-iosUITests/Pods-ewallet-ios-ewallet-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios-ewallet-iosUITests/Pods-ewallet-ios-ewallet-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCA25959A9BB71898B7D1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ewallet-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		803F5DD73C07688429402B40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3CA9A774356C4DE1B824D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ewallet-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23105352B615AFD00658817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23105412B615AFD00658817 /* ViewController.swift in Sources */,
+				F231053D2B615AFD00658817 /* AppDelegate.swift in Sources */,
+				F231053F2B615AFD00658817 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F231054B2B615AFF00658817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23105542B615AFF00658817 /* ewallet_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F23105552B615AFF00658817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F231055E2B615AFF00658817 /* ewallet_iosUITests.swift in Sources */,
+				F23105602B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F23105512B615AFF00658817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23105382B615AFD00658817 /* ewallet-ios */;
+			targetProxy = F23105502B615AFF00658817 /* PBXContainerItemProxy */;
+		};
+		F231055B2B615AFF00658817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F23105382B615AFD00658817 /* ewallet-ios */;
+			targetProxy = F231055A2B615AFF00658817 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F23105422B615AFD00658817 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23105432B615AFD00658817 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F23105472B615AFF00658817 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23105482B615AFF00658817 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23105612B615AFF00658817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F23105622B615AFF00658817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23105642B615AFF00658817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F931AAA12F70DB4636806D3D /* Pods-ewallet-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ewallet-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F23105652B615AFF00658817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73233453EB88A3EBFF012578 /* Pods-ewallet-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ewallet-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F23105672B615AFF00658817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776B89D6A4A3BCD080B60A89 /* Pods-ewallet-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ewallet-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ewallet-ios";
+			};
+			name = Debug;
+		};
+		F23105682B615AFF00658817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70ECA1E898E76EC047FA0DA6 /* Pods-ewallet-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ewallet-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ewallet-ios";
+			};
+			name = Release;
+		};
+		F231056A2B615AFF00658817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E273564EDB4BEFF0225782C /* Pods-ewallet-ios-ewallet-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ewallet-ios";
+			};
+			name = Debug;
+		};
+		F231056B2B615AFF00658817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66C766BC186738F6E14E28D5 /* Pods-ewallet-ios-ewallet-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobile.ewallet.ewallet-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ewallet-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23105342B615AFD00658817 /* Build configuration list for PBXProject "ewallet-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23105612B615AFF00658817 /* Debug */,
+				F23105622B615AFF00658817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23105632B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23105642B615AFF00658817 /* Debug */,
+				F23105652B615AFF00658817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23105662B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23105672B615AFF00658817 /* Debug */,
+				F23105682B615AFF00658817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23105692B615AFF00658817 /* Build configuration list for PBXNativeTarget "ewallet-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F231056A2B615AFF00658817 /* Debug */,
+				F231056B2B615AFF00658817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23105312B615AFD00658817 /* Project object */;
+}

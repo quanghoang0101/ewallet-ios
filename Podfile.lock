@@ -1,0 +1,22 @@
+PODS:
+  - ElectrodeContainer (1.0.0)
+
+DEPENDENCIES:
+  - ElectrodeContainer (from `https://github.com/quanghoang0101/ewallet-container-ios.git`, tag `v1.0.0`)
+
+EXTERNAL SOURCES:
+  ElectrodeContainer:
+    :git: https://github.com/quanghoang0101/ewallet-container-ios.git
+    :tag: v1.0.0
+
+CHECKOUT OPTIONS:
+  ElectrodeContainer:
+    :git: https://github.com/quanghoang0101/ewallet-container-ios.git
+    :tag: v1.0.0
+
+SPEC CHECKSUMS:
+  ElectrodeContainer: 8a368dee1e90277a2ed6186cb8754a22c89894b3
+
+PODFILE CHECKSUM: 183265fdec7b2574dcc936d77de5fb7a4870308d
+
+COCOAPODS: 1.14.3
