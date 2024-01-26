@@ -6,7 +6,7 @@ target 'ewallet-ios' do
   use_frameworks!
 
   # Pods for ewallet-ios
-  pod 'ElectrodeContainer', :git => 'https://github.com/quanghoang0101/ewallet-container-ios.git', :tag => 'v1.0.0'
+  pod 'ElectrodeContainer', :git => 'https://github.com/quanghoang0101/ewallet-container-ios.git', :tag => 'v1.0.2'
 
   target 'ewallet-iosTests' do
     inherit! :search_paths
