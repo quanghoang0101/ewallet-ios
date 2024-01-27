@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let config = ElectrodeContainerConfig()
         ElectrodeReactNative.start(withConfigurations: config, ernDelegate: nil)
+       
         return true
     }
 

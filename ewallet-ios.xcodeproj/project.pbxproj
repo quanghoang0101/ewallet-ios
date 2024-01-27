@@ -12,13 +12,30 @@
 		C1BF4B9D983AB5524B712B27 /* Pods_ewallet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDE080672DDE5247E76A4E2 /* Pods_ewallet_ios.framework */; };
 		F231053D2B615AFD00658817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231053C2B615AFD00658817 /* AppDelegate.swift */; };
 		F231053F2B615AFD00658817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231053E2B615AFD00658817 /* SceneDelegate.swift */; };
-		F23105412B615AFD00658817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105402B615AFD00658817 /* ViewController.swift */; };
+		F23105412B615AFD00658817 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105402B615AFD00658817 /* AuthViewController.swift */; };
 		F23105442B615AFD00658817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23105422B615AFD00658817 /* Main.storyboard */; };
 		F23105462B615AFF00658817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23105452B615AFF00658817 /* Assets.xcassets */; };
 		F23105492B615AFF00658817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23105472B615AFF00658817 /* LaunchScreen.storyboard */; };
 		F23105542B615AFF00658817 /* ewallet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105532B615AFF00658817 /* ewallet_iosTests.swift */; };
 		F231055E2B615AFF00658817 /* ewallet_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231055D2B615AFF00658817 /* ewallet_iosUITests.swift */; };
 		F23105602B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */; };
+		F23105742B63EA1500658817 /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105732B63EA1500658817 /* DashboardTabBarController.swift */; };
+		F23105772B64CF1A00658817 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105762B64CF1A00658817 /* UIColorExt.swift */; };
+		F231057B2B64FA7500658817 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231057A2B64FA7500658817 /* BaseViewController.swift */; };
+		F231057D2B64FAB700658817 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231057C2B64FAB700658817 /* BaseNavigationController.swift */; };
+		F231057F2B64FAEB00658817 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231057E2B64FAEB00658817 /* HomeViewController.swift */; };
+		F23105812B64FB1800658817 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105802B64FB1800658817 /* WalletViewController.swift */; };
+		F23105832B64FB4B00658817 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105822B64FB4B00658817 /* StatisticsViewController.swift */; };
+		F23105852B64FB6C00658817 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105842B64FB6C00658817 /* ProfileViewController.swift */; };
+		F23105872B64FCB800658817 /* VoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105862B64FCB800658817 /* VoucherViewController.swift */; };
+		F23105892B65087200658817 /* CarouselCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105882B65087200658817 /* CarouselCardCell.swift */; };
+		F231058B2B65097E00658817 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231058A2B65097E00658817 /* CarouselFlowLayout.swift */; };
+		F231058D2B650AC300658817 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231058C2B650AC300658817 /* CardCell.swift */; };
+		F231058F2B650DC900658817 /* NameDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231058E2B650DC900658817 /* NameDescribable.swift */; };
+		F23105932B65231500658817 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105922B65231500658817 /* CardInfo.swift */; };
+		F23105972B653CFE00658817 /* FunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105962B653CFE00658817 /* FunctionCell.swift */; };
+		F23105992B6584F800658817 /* PocketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105982B6584F800658817 /* PocketCell.swift */; };
+		F231059B2B658E9200658817 /* PocketSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231059A2B658E9200658817 /* PocketSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +67,7 @@
 		F23105392B615AFD00658817 /* ewallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ewallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F231053C2B615AFD00658817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F231053E2B615AFD00658817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F23105402B615AFD00658817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F23105402B615AFD00658817 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		F23105432B615AFD00658817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23105452B615AFF00658817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23105482B615AFF00658817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +77,23 @@
 		F23105592B615AFF00658817 /* ewallet-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ewallet-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F231055D2B615AFF00658817 /* ewallet_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ewallet_iosUITests.swift; sourceTree = "<group>"; };
 		F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ewallet_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F23105732B63EA1500658817 /* DashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		F23105762B64CF1A00658817 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		F231057A2B64FA7500658817 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F231057C2B64FAB700658817 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		F231057E2B64FAEB00658817 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F23105802B64FB1800658817 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		F23105822B64FB4B00658817 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		F23105842B64FB6C00658817 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F23105862B64FCB800658817 /* VoucherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherViewController.swift; sourceTree = "<group>"; };
+		F23105882B65087200658817 /* CarouselCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardCell.swift; sourceTree = "<group>"; };
+		F231058A2B65097E00658817 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
+		F231058C2B650AC300658817 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		F231058E2B650DC900658817 /* NameDescribable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDescribable.swift; sourceTree = "<group>"; };
+		F23105922B65231500658817 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		F23105962B653CFE00658817 /* FunctionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCell.swift; sourceTree = "<group>"; };
+		F23105982B6584F800658817 /* PocketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCell.swift; sourceTree = "<group>"; };
+		F231059A2B658E9200658817 /* PocketSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketSectionHeader.swift; sourceTree = "<group>"; };
 		F931AAA12F70DB4636806D3D /* Pods-ewallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios.debug.xcconfig"; path = "Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,9 +173,11 @@
 		F231053B2B615AFD00658817 /* ewallet-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F23105942B65238C00658817 /* Resources */,
+				F23105782B64F65500658817 /* Presentations */,
+				F23105752B64CEF700658817 /* Extensions */,
 				F231053C2B615AFD00658817 /* AppDelegate.swift */,
 				F231053E2B615AFD00658817 /* SceneDelegate.swift */,
-				F23105402B615AFD00658817 /* ViewController.swift */,
 				F23105422B615AFD00658817 /* Main.storyboard */,
 				F23105452B615AFF00658817 /* Assets.xcassets */,
 				F23105472B615AFF00658817 /* LaunchScreen.storyboard */,
@@ -165,6 +201,69 @@
 				F231055F2B615AFF00658817 /* ewallet_iosUITestsLaunchTests.swift */,
 			);
 			path = "ewallet-iosUITests";
+			sourceTree = "<group>";
+		};
+		F23105752B64CEF700658817 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F23105762B64CF1A00658817 /* UIColorExt.swift */,
+				F231058E2B650DC900658817 /* NameDescribable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F23105782B64F65500658817 /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				F23105912B6511D000658817 /* Layouts */,
+				F23105902B65119C00658817 /* Home */,
+				F23105792B64FA5F00658817 /* Base */,
+				F23105402B615AFD00658817 /* AuthViewController.swift */,
+				F23105732B63EA1500658817 /* DashboardTabBarController.swift */,
+				F23105802B64FB1800658817 /* WalletViewController.swift */,
+				F23105822B64FB4B00658817 /* StatisticsViewController.swift */,
+				F23105842B64FB6C00658817 /* ProfileViewController.swift */,
+				F23105862B64FCB800658817 /* VoucherViewController.swift */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		F23105792B64FA5F00658817 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F231057A2B64FA7500658817 /* BaseViewController.swift */,
+				F231057C2B64FAB700658817 /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F23105902B65119C00658817 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F231057E2B64FAEB00658817 /* HomeViewController.swift */,
+				F23105882B65087200658817 /* CarouselCardCell.swift */,
+				F231058C2B650AC300658817 /* CardCell.swift */,
+				F23105922B65231500658817 /* CardInfo.swift */,
+				F23105962B653CFE00658817 /* FunctionCell.swift */,
+				F23105982B6584F800658817 /* PocketCell.swift */,
+				F231059A2B658E9200658817 /* PocketSectionHeader.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F23105912B6511D000658817 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				F231058A2B65097E00658817 /* CarouselFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		F23105942B65238C00658817 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,9 +505,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23105412B615AFD00658817 /* ViewController.swift in Sources */,
+				F231059B2B658E9200658817 /* PocketSectionHeader.swift in Sources */,
+				F23105412B615AFD00658817 /* AuthViewController.swift in Sources */,
+				F23105992B6584F800658817 /* PocketCell.swift in Sources */,
+				F231058F2B650DC900658817 /* NameDescribable.swift in Sources */,
+				F231058B2B65097E00658817 /* CarouselFlowLayout.swift in Sources */,
+				F23105972B653CFE00658817 /* FunctionCell.swift in Sources */,
+				F23105832B64FB4B00658817 /* StatisticsViewController.swift in Sources */,
+				F231057D2B64FAB700658817 /* BaseNavigationController.swift in Sources */,
 				F231053D2B615AFD00658817 /* AppDelegate.swift in Sources */,
+				F231058D2B650AC300658817 /* CardCell.swift in Sources */,
+				F23105932B65231500658817 /* CardInfo.swift in Sources */,
+				F231057F2B64FAEB00658817 /* HomeViewController.swift in Sources */,
+				F23105742B63EA1500658817 /* DashboardTabBarController.swift in Sources */,
+				F23105852B64FB6C00658817 /* ProfileViewController.swift in Sources */,
+				F23105812B64FB1800658817 /* WalletViewController.swift in Sources */,
+				F23105772B64CF1A00658817 /* UIColorExt.swift in Sources */,
+				F23105872B64FCB800658817 /* VoucherViewController.swift in Sources */,
 				F231053F2B615AFD00658817 /* SceneDelegate.swift in Sources */,
+				F23105892B65087200658817 /* CarouselCardCell.swift in Sources */,
+				F231057B2B64FA7500658817 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
