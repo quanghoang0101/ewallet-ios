@@ -19,8 +19,7 @@ class PocketCell: UICollectionViewCell, NameDescribable {
     
     let icon: UILabel = {
         let label = UILabel()
-        label.text = "🌴"
-        label.backgroundColor = UIColor.lightGray
+        label.backgroundColor = UIColor(hex: "#e8eaee")
         label.layer.cornerRadius = 15
         label.layer.borderWidth = 1
         label.layer.borderColor = UIColor.clear.cgColor
@@ -31,17 +30,23 @@ class PocketCell: UICollectionViewCell, NameDescribable {
     
     let title: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20)
-        label.textColor = UIColor.gray
-        label.text = "Travelling"
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = UIColor(hex: "#939db3")
         return label
     }()
     
     let money: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
-        label.text = "$30.000"
+        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
         return label
+    }()
+    
+    let more: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "ic-more.png")?.withRenderingMode(.alwaysTemplate)
+        view.tintColor = UIColor.lightGray
+        view.contentMode = .scaleAspectFit
+        return view
     }()
     
     override init(frame: CGRect) {
@@ -50,6 +55,7 @@ class PocketCell: UICollectionViewCell, NameDescribable {
         self.containerView.addSubview(icon)
         self.containerView.addSubview(title)
         self.containerView.addSubview(money)
+        self.containerView.addSubview(more)
         self.setupContraints()
     }
     
@@ -70,6 +76,11 @@ class PocketCell: UICollectionViewCell, NameDescribable {
         icon.widthAnchor.constraint(equalToConstant: 30).isActive = true
         icon.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        more.translatesAutoresizingMaskIntoConstraints = false
+        more.centerYAnchor.constraint(equalTo: icon.centerYAnchor).isActive = true
+        more.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -15).isActive = true
+        more.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        
         title.translatesAutoresizingMaskIntoConstraints = false
         title.topAnchor.constraint(equalTo: icon.bottomAnchor, constant: 25).isActive = true
         title.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 15).isActive = true
@@ -81,5 +92,9 @@ class PocketCell: UICollectionViewCell, NameDescribable {
         money.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: 15).isActive = true
     }
     
-    
+    func setData(pocket: PocketModel) {
+        icon.text = pocket.title
+        title.text = pocket.name
+        money.text = pocket.money
+    }
 }

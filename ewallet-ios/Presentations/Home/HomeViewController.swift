@@ -9,13 +9,64 @@ import UIKit
 
 class HomeViewController : BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    private lazy var pockets: [PocketModel] = PocketModel.CreatePocketData()
+    private let leftBar: UIStackView = {
+        let stack = UIStackView()
+        stack.distribution = .fillProportionally
+        stack.spacing = 8
+        
+        let button = UIButton()
+        let buttonWidthConstraint = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 33)
+        let buttonHeightConstraint = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 33)
+        button.addConstraints([buttonWidthConstraint, buttonHeightConstraint])
+        button.setTitle("👱‍♂️", for: .normal)
+        button.layer.cornerRadius = 33/2
+        button.layer.borderWidth = 1
+        button.layer.borderColor =  UIColor(hex: "#e8eaed").cgColor
+        button.backgroundColor = UIColor(hex: "#e8eaed")
+        
+        let subStack = UIStackView()
+        subStack.axis = .vertical
+        subStack.spacing = 0
+        
+        let title = UILabel()
+        title.text = "Good Morning!"
+        title.textColor = UIColor(hex: "#b4abaa")
+        title.font = UIFont.systemFont(ofSize: 12)
+        
+        let name = UILabel()
+        name.text = "Phan Quang Hoàng"
+        name.textColor = UIColor.black
+        name.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        
+        subStack.insertArrangedSubview(title, at: 0)
+        subStack.insertArrangedSubview(name, at: 1)
+        stack.insertArrangedSubview(button, at: 0)
+        stack.insertArrangedSubview(subStack, at: 1)
+        
+        return stack
+    }()
+    
+    private let rightBar: UIStackView = {
+        let stack = UIStackView()
+        stack.distribution = .fillProportionally
+        
+        let button = UIButton()
+        button.tintColor = UIColor(hex: "#282444")
+        button.setImage(UIImage(named: "ic-notification.png")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        let buttonWidthConstraint = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        let buttonHeightConstraint = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
+        button.addConstraints([buttonWidthConstraint, buttonHeightConstraint])
+        
+        stack.addArrangedSubview(button)
+        return stack
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isTranslucent = false;
-        self.navigationController?.tabBarController?.tabBar.isTranslucent = false;
         
-        let notiIcon = UIImage(named: "ic-notification.png")?.withRenderingMode(.alwaysOriginal)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: notiIcon, style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBar)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBar)
         view.addSubview(collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -54,7 +105,7 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
             return 2
         }
         
-        return 10
+        return pockets.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -70,7 +121,8 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
             }
         }
         
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: PocketCell.typeName, for: indexPath)
+        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: PocketCell.typeName, for: indexPath) as! PocketCell
+        cell.setData(pocket: pockets[indexPath.row])
         return cell
     }
     
