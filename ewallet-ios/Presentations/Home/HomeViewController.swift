@@ -57,7 +57,7 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
         let buttonWidthConstraint = NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         let buttonHeightConstraint = NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 28)
         button.addConstraints([buttonWidthConstraint, buttonHeightConstraint])
-        
+       
         stack.addArrangedSubview(button)
         return stack
     }()
@@ -67,7 +67,10 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBar)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBar)
+        let button: UIButton = rightBar.arrangedSubviews[0] as! UIButton
+        button.addTarget(self, action: #selector(notiButtonPressed(_:)), for: UIControl.Event.touchUpInside)
         view.addSubview(collectionView)
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(CarouselCardCell.self,
@@ -94,6 +97,10 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    }
+    
+    @objc private func notiButtonPressed(_ sender: UIButton) {
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
