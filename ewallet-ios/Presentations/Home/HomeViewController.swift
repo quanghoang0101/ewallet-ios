@@ -75,8 +75,8 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
         collectionView.dataSource = self
         collectionView.register(CarouselCardCell.self,
                                forCellWithReuseIdentifier: CarouselCardCell.typeName)
-        collectionView.register(FunctionViewCell.self,
-                                forCellWithReuseIdentifier: FunctionViewCell.typeName)
+        collectionView.register(HomeMenuCell.self,
+                                forCellWithReuseIdentifier: HomeMenuCell.typeName)
         collectionView.register(PocketCell.self,
                                 forCellWithReuseIdentifier: PocketCell.typeName)
         collectionView.register(PocketSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: PocketSectionHeader.typeName)
@@ -123,7 +123,7 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
             }
             
             if (indexPath.row == 1) {
-                let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: FunctionViewCell.typeName, for: indexPath)
+                let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: HomeMenuCell.typeName, for: indexPath)
                 return cell
             }
         }

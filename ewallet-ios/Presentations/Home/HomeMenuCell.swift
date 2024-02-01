@@ -7,18 +7,18 @@
 
 import UIKit
 
-struct FunctionInfo {
+struct HomeMenuCellModel {
     let name: String
     let icon: String
 }
 
-class FunctionViewCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, NameDescribable {
+class HomeMenuCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, NameDescribable {
     
-    let funcInfos: [FunctionInfo] = [
-        FunctionInfo(name: "Transfer", icon: "ic-transfer.png"),
-        FunctionInfo(name: "Scan", icon: "ic-scan.png"),
-        FunctionInfo(name: "Top-up", icon: "ic-topup.png"),
-        FunctionInfo(name: "More", icon: "ic-more.png")
+    let funcInfos: [HomeMenuCellModel] = [
+        HomeMenuCellModel(name: "Transfer", icon: "ic-transfer.png"),
+        HomeMenuCellModel(name: "Scan", icon: "ic-scan.png"),
+        HomeMenuCellModel(name: "Top-up", icon: "ic-topup.png"),
+        HomeMenuCellModel(name: "More", icon: "ic-more.png")
     ]
     
     let collectionView: UICollectionView = {
@@ -91,7 +91,7 @@ class FunctionCell: UICollectionViewCell, NameDescribable {
         content.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
     }
     
-    func setTitle(info: FunctionInfo) {
+    func setTitle(info: HomeMenuCellModel) {
         self.content.setTitle(info: info)
     }
 }
@@ -152,7 +152,7 @@ class FunctionView: UIView {
         title.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     }
     
-    func setTitle(info: FunctionInfo) {
+    func setTitle(info: HomeMenuCellModel) {
         self.title.text = info.name
         self.imageView.image = UIImage(named: info.icon)
     }
