@@ -17,7 +17,7 @@ class AuthViewController: BaseViewController {
         miniapp.view.frame = UIScreen.main.bounds
         view.addSubview(miniapp.view)
         
-        AuthUserAPI().events.addAuthUserEventEventListener { data in
+        let uuid = AuthUserAPI().events.addAuthUserEventEventListener { data in
             let allScenes = UIApplication.shared.connectedScenes
             let scene = allScenes.first { $0.activationState == .foregroundActive }
                                     
@@ -27,5 +27,6 @@ class AuthViewController: BaseViewController {
         }
     }
 
+    
 }
 

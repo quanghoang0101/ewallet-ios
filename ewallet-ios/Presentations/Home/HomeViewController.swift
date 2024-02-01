@@ -100,7 +100,7 @@ class HomeViewController : BaseViewController, UICollectionViewDelegate, UIColle
     }
     
     @objc private func notiButtonPressed(_ sender: UIButton) {
-        
+        self.navigationController?.pushViewController(NotificationViewController(), animated: true)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

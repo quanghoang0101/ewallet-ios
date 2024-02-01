@@ -37,6 +37,7 @@
 		F23105992B6584F800658817 /* PocketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23105982B6584F800658817 /* PocketCell.swift */; };
 		F231059B2B658E9200658817 /* PocketSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231059A2B658E9200658817 /* PocketSectionHeader.swift */; };
 		F231059D2B66059D00658817 /* PocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231059C2B66059D00658817 /* PocketModel.swift */; };
+		F231059F2B6B93A600658817 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231059E2B6B93A600658817 /* NotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		F23105982B6584F800658817 /* PocketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCell.swift; sourceTree = "<group>"; };
 		F231059A2B658E9200658817 /* PocketSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketSectionHeader.swift; sourceTree = "<group>"; };
 		F231059C2B66059D00658817 /* PocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketModel.swift; sourceTree = "<group>"; };
+		F231059E2B6B93A600658817 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		F931AAA12F70DB4636806D3D /* Pods-ewallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ewallet-ios.debug.xcconfig"; path = "Target Support Files/Pods-ewallet-ios/Pods-ewallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +228,7 @@
 				F23105822B64FB4B00658817 /* StatisticsViewController.swift */,
 				F23105842B64FB6C00658817 /* ProfileViewController.swift */,
 				F23105862B64FCB800658817 /* VoucherViewController.swift */,
+				F231059E2B6B93A600658817 /* NotificationViewController.swift */,
 			);
 			path = Presentations;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				F231058D2B650AC300658817 /* CardCell.swift in Sources */,
 				F23105932B65231500658817 /* CardInfo.swift in Sources */,
 				F231057F2B64FAEB00658817 /* HomeViewController.swift in Sources */,
+				F231059F2B6B93A600658817 /* NotificationViewController.swift in Sources */,
 				F23105742B63EA1500658817 /* DashboardTabBarController.swift in Sources */,
 				F23105852B64FB6C00658817 /* ProfileViewController.swift in Sources */,
 				F23105812B64FB1800658817 /* WalletViewController.swift in Sources */,

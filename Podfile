@@ -7,7 +7,7 @@ target 'ewallet-ios' do
 
   # Pods for ewallet-ios
   pod 'CreditCardView'
-  pod 'ElectrodeContainer', :git => 'https://github.com/quanghoang0101/ewallet-container-ios.git', :tag => 'v1.0.3'
+  pod 'ElectrodeContainer', :git => 'https://github.com/quanghoang0101/ewallet-container-ios.git', :tag => 'v1.0.4'
 
   target 'ewallet-iosTests' do
     inherit! :search_paths
