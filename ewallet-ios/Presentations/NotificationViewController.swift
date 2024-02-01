@@ -12,7 +12,8 @@ class NotificationViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Notification"
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         let miniapp = ElectrodeReactNative.sharedInstance().miniApp(withName: "NotificationMiniapp", properties: nil, overlay: false, sizeFlexibility: 0, delegate: nil)
         miniapp.view.frame = UIScreen.main.bounds
         view.addSubview(miniapp.view)

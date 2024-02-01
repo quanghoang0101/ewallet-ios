@@ -1,10 +1,10 @@
 PODS:
   - CreditCardView (0.1.1)
-  - ElectrodeContainer (1.0.4)
+  - ElectrodeContainer (1.0.5)
 
 DEPENDENCIES:
   - CreditCardView
-  - ElectrodeContainer (from `https://github.com/quanghoang0101/ewallet-container-ios.git`, tag `v1.0.4`)
+  - ElectrodeContainer (from `https://github.com/quanghoang0101/ewallet-container-ios.git`, tag `v1.0.5`)
 
 SPEC REPOS:
   trunk:
@@ -13,17 +13,17 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   ElectrodeContainer:
     :git: https://github.com/quanghoang0101/ewallet-container-ios.git
-    :tag: v1.0.4
+    :tag: v1.0.5
 
 CHECKOUT OPTIONS:
   ElectrodeContainer:
     :git: https://github.com/quanghoang0101/ewallet-container-ios.git
-    :tag: v1.0.4
+    :tag: v1.0.5
 
 SPEC CHECKSUMS:
   CreditCardView: 2f4c9dbede61e2867067b1dbdb8a2b3366d04500
-  ElectrodeContainer: 9f889111ee3dabdded6b72a2eaa5597581539d27
+  ElectrodeContainer: fb8f97b529dfdd29d740d1d2f439ce39ba74e749
 
-PODFILE CHECKSUM: 5194ca9d01ac4478e4173d4ad62a775486c3158b
+PODFILE CHECKSUM: e709f760539702f73adce16bf0c616981aa204c9
 
 COCOAPODS: 1.14.3
